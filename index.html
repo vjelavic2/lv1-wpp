@@ -26,7 +26,7 @@
                         <a href="#testimonials" class="home" aria-label="Testimonials" role="alert">Testimonials</a>
                     </div>
                     <div class="empty2"></div>
-                    <button class="contact-button" aria-label="Contact me">Contact Me</button>
+                    <button class="contactButton" aria-label="Contact me">Contact Me</button>
                 </div>
             </div>
 
@@ -152,7 +152,7 @@
                     </div>
                     <div class="socialButton">
                         <img class="socialPicture" alt="Social icon picture" src="images/Social icon.png" loading="lazy"/>
-                        <div class="home" role="link" tabindex="0" aria-label="Visit My Dribbble">Visit My Dribbble</div>
+                        <div class="neww" role="link" tabindex="0" aria-label="Visit My Dribbble">Visit My Dribbble</div>
                     </div>
                 </div>
 
@@ -287,7 +287,7 @@
 
 
             <!---Form for contact---->
-            <div class="contactForm" role="form" aria-labelledby="contact-section-title">
+            <div class="contactForm" id="contactt" role="form" aria-labelledby="contact-section-title">
 
                 <div class="section-title">
                     <div class="subtitleText">Get In Touch</div>
@@ -301,78 +301,53 @@
                     <div class="inputs">
                         <div class="input" aria-labelledby="firstName">
                             <div class="firstName">First name</div>
-                            <div class="input1"></div>
+                            <input type="text" class="input1" id="first-name">
                         </div>
                         <div class="input" aria-labelledby="last-name">
                             <div class="firstName">Last name</div>
-                            <div class="input1"></div>
+                            <input type="text" class="input1" id="last-name" >
                         </div>
                     </div>
                     <div class="inputs">
                         <div class="input" aria-labelledby="email">
                             <div class="firstName">Email</div>
-                            <div class="input1"></div>
+                            <input type="email" class="input1" id="email">
                         </div>
                         <div class="input" aria-labelledby="phone-number">
                             <div class="firstName">Phone number</div>
-                            <div class="input1"></div>
+                            <input type="tel" class="input1" id="phone-number">
                         </div>
                     </div>
+
+
                     <div class="title" aria-labelledby="topic-selection">
                         <div class="firstName">Choose a topic</div>
-                        <div class="select-input">
-                            <div class="select-one">Select one...</div>
-                            <img class="icon" alt="Social icon" src="images/Social icon.png" loading="lazy"/>
+                       
+                            <select class="input1" id="select-one">
+                                <option value="">Select one...</option>
+                                <option value="first">First topic</option>
+                                <option value="second">Second topic</option>
+                                <option value="third">Third topic</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="radios" aria-labelledby="user-description">
-                        <div class="home">Which best describes you?</div>
-                        <div class="content2">
-                            <div class="column">
-                                <div class="radio-button">
-                                    <div class="radio"></div>
-                                    <div class="select-one">First choice</div>
-                                </div>
-                                <div class="radio-button">
-                                    <div class="radio"></div>
-                                    <div class="select-one">Third choice</div>
-                                </div>
-                                <div class="radio-button">
-                                    <div class="radio"></div>
-                                    <div class="select-one">Fifth choice</div>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="radio-button">
-                                    <div class="radio"></div>
-                                    <div class="select-one">Second choice</div>
-                                </div>
-                                <div class="radio-button">
-                                    <div class="radio"></div>
-                                    <div class="select-one">Fourth choice</div>
-                                </div>
-                                <div class="radio-button">
-                                    <div class="radio"></div>
-                                    <div class="select-one">Other</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+
 
                     <div class="title" aria-labelledby="message-input">
                         <div class="firstName">Message</div>
-                        <div class="input2">
-                            <div class="select-one">Type your message...</div>
-                        </div>
+                            <textarea id="message" class="input2" placeholder="Type your message..."></textarea>
                     </div>
+                    
 
                     <div class="checkbox-button">
-                        <div class="checkbox"></div>
-                        <div class="home" aria-labelledby="terms-acceptance">I accept the terms</div>
+                        <input type="checkbox" id="terms-checkbox">
+                        <label for="terms-checkbox" class="home" aria-labelledby="terms-acceptance">I accept the terms</label>
                     </div>
+                    
 
-
-                    <button class="submit-button" aria-label="Submit button">Submit</button>
+                    <form id="myForm" action="#contactt" method="post">
+                        <button type="submit" class="submit-button" aria-label="Submit button">Submit</button>
+                    </form>
 
                 </div>
             </div>
@@ -387,13 +362,13 @@
                     <img class="frame-icon" alt="Logo icone" src="images/Logo.png" loading="lazy"/>
 
                     <div class="links" role="navigation" aria-label="Main navigation">
-                        <div class="home">Home</div>
-                        <div class="home">Portfolio</div>
-                        <div class="home">About me</div>
-                        <div class="home">Contact</div>
-                        <div class="home">Testimonials</div>
-                        <div class="home">Portfolio</div>
+                        <a href="#home" class="home" aria-label="Home page" role="link">Home</a>
+                        <a href="#portfolio" class="home" aria-label="Portfolio" role="link">Portfolio</a>
+                        <a href="#about" class="home" aria-label="About me" role="link">About me</a>
+                        <a href="#contactt" class="home" aria-label="Contact me" role="link">Contact me</a>
+                        <a href="#testimonials" class="home" aria-label="Testimonials" role="alert">Testimonials</a>
                     </div>
+                   
 
                     <div class="socials" role="navigation" aria-label="Social media links">
                         <img class="facebookPicture" alt="Facebook picture" src="images/Facebook.png" loading="lazy"/>
@@ -411,9 +386,9 @@
                             <a class="airdokan" href="https://airdokan.com/" target="_blank">Made with 💖 by Airdokan</a>
                         </div>
                         <div class="linksDown" role="navigation" aria-label="Footer navigation">
-                            <div class="home">Privacy Policy</div>
-                            <div class="home">Terms of Service</div>
-                            <div class="home">Cookies Settings</div>
+                            <div class="add">Privacy Policy</div>
+                            <div class="add">Terms of Service</div>
+                            <div class="add">Cookies Settings</div>
                         </div>
                     </div>
                 </div>
